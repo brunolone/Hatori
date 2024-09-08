@@ -1,0 +1,226 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap");
+/* importa a fonte usada na Página (red hat ) */
+
+body {
+    font-family:  "Red Hat Display", sans-serif; /*fonte usada em todo texto da pagina */
+    /*se usar background color aqui, a animação de fundo não funciona*/
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+main {
+    flex-grow: 1;
+  }
+  
+  footer {
+    align-self: flex-end;
+  }
+header{
+    justify-content: center;
+}
+
+.container-cabeca{
+        position: relative;
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+        padding: 1rem;
+}
+.icone {
+    width: 30vh;
+       }
+.texto {
+    width: 80vh;
+}
+.icone img {
+      height: 25vh;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+.pesquisa {
+    align-self: center;   
+    
+}
+
+section {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction:row; /* Alinha os itens na vertical */
+    justify-content: left; /*alinha para direita ou esquerda */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 30rem; /* Espaçamento abaixo de cada seção */
+    margin: 0% auto;
+}
+.resultados-pesquisa {
+    width: 100%; /* Largura máxima da caixa de resultados */
+    height: 55vh; /* Altura máxima da caixa de resultados */
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+    
+}
+.introducao {
+    background: #ffffff;
+    justify-content: space-between;
+    border-radius: 0.6rem; 
+    padding: 1rem;
+    margin-bottom: 1rem; 
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+}
+.containerres {
+    overflow-x: auto ; /* Adiciona rolagem vertical se necessário */
+    display: flex;
+    justify-content: space-between;
+}
+/*  RESPONSAVEL PELAS DIVS ONDE VAI APARECER OS REESULTADOS DA PESQUISA !!!!!! */
+.mostreresultado {
+    display: flex;
+    justify-content: space-between;
+    height: 55vh;
+    width: 100vh;
+    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+
+/* RESPONSAVEL PELA DIV DA ESQUERDA ONDE VAI APARECER TODOS OS TEXTOS DA BASE DE DADOS */
+.conteudo {
+   
+    background: #FFFFFF;
+    height: 50vh;
+    width: 50vh;
+    margin-top: 10px; /* Espaçamento acima da caixa de resultados */
+   padding: 1rem; /* Espaçamento interno */
+    /*border-radius: 0.6rem; /* Borda arredondada */
+    border-radius: 0.6rem; /* Borda arredondada */
+    margin-bottom: 10rem; /* Espaçamento abaixo dos itens */
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    
+
+}
+/* RESPONSAVEL PELA DIV DA DIREITA ONDE VAI APARECER O RETRATO DAS PESQUISAS */
+.retrato img {
+    width: 50vh;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 0.6rem; 
+   
+      }
+
+.item-resultado {
+    height: 55vh;
+    width: 35vh;
+    justify-content: space-between;
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+
+.item-resultadoex {
+    height: 55vh;
+    width: 45vh;
+    justify-content: space-between;
+    /* background-image: url(papel.jpg); imagem de fundo da div */
+    background-image: linear-gradient(to right, #57abd9, #FFFFFF);
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    margin: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.conteudo h2 { /*estiliza o titulo h2 do card */
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+.conteudo img{
+    width: 35vh;
+    height: 22vh;
+    align-self: center;
+}
+/* Estiliza os links dentro dos itens de resultado */
+.conteudo a { /*estiliza o link do card */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #30475E; /* Cor do texto dos links */
+}
+/* Estiliza os links quando são passados o mouse sobre */
+.conteudo a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+
+
+/* none of this CSS is relevant to the wave animation */
+  :root{
+    --clr-primary: #F5F5F5;
+    --clr-secondary: #38BDF8;
+    --clr-button: #002c44;
+  }
+   code{
+    color: var(--clr-secondary);
+    border: 1px solid rgba(from var(--clr-secondary) r g b / .2);
+    padding-inline: .2rem;
+    border-radius: 5px;
+  }
+  
+  svg{
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    max-height: 100vh;
+    position:absolute;
+    border: 0px solid rgba(from var(--clr-primary) r g b / .15);
+    border-radius: 5px;
+    z-index: -1;
+  }
+
+  .container-cabeca button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Borda arredondada */
+    background-color: #30475E; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+  .container-cabeca input {
+    width: 25rem; /* Largura dos inputs */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-style: italic;
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+
+   .easteregg img{
+    width: 90vh;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    align-self: center;
+
+   }
+   footer {
+    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 1px; /* Espaçamento interno */
+    height: 4%;
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}

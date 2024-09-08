@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Definição do conjunto de caracteres para o documento -->
+    <meta charset="UTF-8">
+    <!-- Configuração da viewport para responsividade em dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para a folha de estilos CSS -->
+    <link rel="stylesheet" href="water.css">
+    <!-- Título da página, que aparece na aba do navegador -->
+    <title> Water Seven </title>
+</head> 
+
+<body>  
+    <!-- Div principal contendo cabeçalho, ícone e barra de pesquisa -->
+    <div class="container-cabeca">
+        <!-- Seção do ícone com uma imagem -->
+        <div class="icone">
+            <img src="imagens/hatori.jpg" alt="pombo hatori">
+        </div>
+
+        <!-- Seção de texto com uma citação -->
+        <div class="texto">
+            <h1>
+                <b>
+                    "Eu, Hattori, sou o pombo de estimação do Lucci! Sou o melhor observador de Water Seven. Conheço cada canto da cidade, cada pessoa e cada segredo. Ku ku ku! Se você precisar de informações, é só me chamar!"
+                </b>
+            </h1>
+        </div>
+
+        <!-- Seção de pesquisa com um campo de entrada e um botão -->
+        <div class="pesquisa">  
+            <input type="text" placeholder="Kukuku! Sobre o que quer saber?" id="barra-pesquisa">
+            <button onclick="pesquisa()">Conhece?</button>
+        </div>
+    </div>
+
+    <!-- Seção de resultados da pesquisa -->
+    <section class="resultados-pesquisa">
+        <!-- SVG para animação de ondas -->
+        <svg viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" overflow="auto" shape-rendering="auto" fill="currentColor">
+            <defs>
+                <!-- Definição do caminho da onda para animação -->
+                <path id="wave" d="M 0 2000 0 500 Q 120 420 300 500 t 300 0 300 0 300 0 300 0 300 0  v700 z" />
+                <path id="wave-path" d="M -600 0 0 0" />
+            </defs>
+            <g>
+                <!-- Animação de ondas usando o caminho definido -->
+                <use xlink:href="#wave" x="-100" y="-200" fill="rgba(2, 132, 199, 0.5)">
+                    <animateMotion dur="10s" repeatCount="indefinite">
+                        <mpath xlink:href="#wave-path" />
+                    </animateMotion>
+                </use>
+                <use xlink:href="#wave" x="0" y="-180" fill="rgba(2, 132, 199, 0.4)" opacity="50%">
+                    <animateMotion dur="6s" repeatCount="indefinite">
+                        <mpath xlink:href="#wave-path" />
+                    </animateMotion>
+                </use>
+                <use xlink:href="#wave" x="0" y="-280" fill="rgba(22, 132, 199, 0.2)">
+                    <animateMotion dur="14s" repeatCount="indefinite">
+                        <mpath xlink:href="#wave-path" />
+                    </animateMotion>
+                </use>
+            </g>
+        </svg>
+
+        <!-- Seção com um item de resultado -->
+        <div class="item-resultadoex">
+            <div class="introducao">
+                <div class="textoex">
+                    <h2> Ei, navegante!</h2>
+                    <em>
+                        Atenção a todos os habitantes de Water Seven! É com grande entusiasmo que anuncio que os <b>Piratas</b> do Chapéu de Palha chegaram à nossa vibrante cidade! Sim, a tripulação liderada pelo intrépido Monkey D. <b>Luffy</b> está aqui, e sua presença promete agitar as coisas por toda parte! Os renomados <b>Carpinteiros</b> e outras figuras influentes da cidade, como <b>Franky</b> e <b>Iceburg</b> estão todos envolvidos e prontos para interagir com os recém-chegados. Kururururu! Fiquem atentos, pois esta visita certamente trará eventos marcantes e mudanças emocionantes para todos os que habitam Water Seven! Que comece a grande aventura!
+                    </em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contêiner para mostrar os resultados da pesquisa -->
+        <div class="containerres">
+            <div class="mostreresultado" id="mostreresultado">
+                <!-- Resultados da pesquisa serão exibidos aqui -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>
+            <b>Hattori, o fofoqueiro</b>- Projeto realizado com base nos conteúdos da <b>Imersão Alura + Google Gemini</b> - Inspirado em <b>One Piece, Eiichiro Oda</b> - Entre em contato : brunoloneso@gmail.com
+        </p>
+    </footer>
+
+    <!-- Links para scripts JavaScript -->
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+    
+
+
